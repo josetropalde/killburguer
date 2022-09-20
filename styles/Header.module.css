@@ -1,0 +1,42 @@
+.header {
+  background-color: #101010;
+  min-height: 21.875rem;
+  position: relative;
+  padding: 2rem 5%;
+}
+.logo img {
+  max-width: 150px;
+  display: block;
+  margin: auto;
+}
+.firstStain {
+  position: absolute;
+  right: 0rem;
+  bottom: 2rem;
+  width: 150px;
+}
+.secondStain {
+  position: absolute;
+  left: -1.25rem;
+  top: 0rem;
+  max-width: 100px;
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 4rem 5%;
+    min-height: 25rem;
+    position: relative;
+  }
+  .firstStain {
+    position: absolute;
+    right: 0rem;
+    bottom: 2rem;
+    width: 300px;
+  }
+  .secondStain {
+    position: absolute;
+    left: -1.25rem;
+    top: -5rem;
+    max-width: 12.5rem;
+  }
+}

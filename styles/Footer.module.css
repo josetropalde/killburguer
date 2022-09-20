@@ -1,0 +1,43 @@
+.footer {
+  background-color: #101010;
+  padding: 1rem 5%;
+}
+.local {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.local h2 {
+  text-transform: uppercase;
+}
+.logo img {
+  max-width: 150px;
+  display: block;
+  margin: auto;
+}
+.socials {
+  text-align: center;
+}
+.socials a img {
+  max-width: 35px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+  }
+  .local h2 {
+   font-size: 2rem;
+  }
+  .local p {
+    font-size: 1.25rem;
+  }
+  .socials a img {
+    max-width: 40px;
+    margin-right: 2rem;
+  }
+}
