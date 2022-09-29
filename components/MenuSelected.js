@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "../styles/MenuSelected.module.css";
+import { StructuredText } from "react-datocms";
 
 const MenuSelected = (props) => {
   const { itemIndex, data } = props;
@@ -31,7 +32,7 @@ const MenuSelected = (props) => {
                 <div className={styles.content}>
                   <h2>{item.title}</h2>
                   <span>{item.price}</span>
-                  <p>{item.description}</p>
+                  <StructuredText data={item.description} />
                   <a target="_blank" rel="noreferrer" href={item.href}>
                     Peça agora
                   </a>

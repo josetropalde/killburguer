@@ -9,7 +9,9 @@ const HOMEPAGE_QUERY = `
 query {
   allItems {
     title
-    description
+    description {
+      value
+    }
     src {
       url
     }
@@ -49,7 +51,7 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>Nosso cardápio</title>
+        <title>Mr.Kill - Nosso cardápio</title>
       </Head>
       <Header />
       <Menu data={data} />
