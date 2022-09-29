@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
-import { useQuerySubscription, createSubscription } from "react-datocms";
+import { useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 
 const HOMEPAGE_QUERY = `
@@ -43,6 +43,8 @@ const Home = (props) => {
   const { subscription } = props;
 
   const { data, error, status } = useQuerySubscription(subscription);
+
+  console.log(data);
 
   return (
     <>
