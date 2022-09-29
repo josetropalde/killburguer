@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styles from "../styles/MenuSelected.module.css";
 
 const MenuSelected = (props) => {
-  const { itemIndex, itens } = props;
+  const { itemIndex, data } = props;
 
   let display;
 
@@ -18,7 +18,7 @@ const MenuSelected = (props) => {
     <>
       <section>
         <div className={styles.itens}>
-          {itens.map((item, index) => {
+          {data.allItems.map((item, index) => {
             return (
               <div
                 className={styles.item}
@@ -26,13 +26,15 @@ const MenuSelected = (props) => {
                 style={{ display: itemIndex == index ? display : "none" }}
               >
                 <div className={styles.image}>
-                  <img src={item.src} />
+                  <img src={item.src.url} />
                 </div>
                 <div className={styles.content}>
                   <h2>{item.title}</h2>
                   <span>{item.price}</span>
-                  <p>{item.text}</p>
-                  <a href={item.href}>Peça agora</a>
+                  <p>{item.description}</p>
+                  <a target="_blank" rel="noreferrer" href={item.href}>
+                    Peça agora
+                  </a>
                   <span></span>
                 </div>
               </div>

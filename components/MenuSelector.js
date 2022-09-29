@@ -1,13 +1,13 @@
 import styles from "../styles/MenuSelector.module.css";
 
 const MenuSelector = (props) => {
-  const { setItemIndex, itemIndex, itens } = props;
+  const { setItemIndex, itemIndex, data } = props;
 
   return (
     <>
       <section className={styles.selector}>
         <div className={styles.itens}>
-          {itens.map((item, index) => {
+          {data.allItems.map((item, index) => {
             return (
               <div
                 className={styles.item}
@@ -17,7 +17,7 @@ const MenuSelector = (props) => {
                   backgroundColor: itemIndex == index ? "#da2630" : "#9E1B23",
                 }}
               >
-                <img src={item.src} />
+                <img src={item.src.url} />
                 <h1>{item.title}</h1>
               </div>
             );

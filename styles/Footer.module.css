@@ -17,6 +17,7 @@
 }
 .socials {
   text-align: center;
+  margin-bottom: 2rem;
 }
 .socials a img {
   max-width: 35px;
