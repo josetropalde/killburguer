@@ -16,7 +16,6 @@ query {
       url
     }
     price
-    href
   }
 }`;
 
@@ -45,8 +44,6 @@ const Home = (props) => {
   const { subscription } = props;
 
   const { data, error, status } = useQuerySubscription(subscription);
-
-  console.log(data);
 
   return (
     <>

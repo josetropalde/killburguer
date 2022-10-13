@@ -1,11 +1,11 @@
 .header {
-  background-color: #101010;
+  background-color: #000;
   min-height: 21.875rem;
   position: relative;
   padding: 2rem 5%;
 }
 .logo img {
-  max-width: 150px;
+  max-width: 12.5rem;
   display: block;
   margin: auto;
 }
@@ -13,13 +13,13 @@
   position: absolute;
   right: 0rem;
   bottom: 2rem;
-  width: 150px;
+  width: 9.375rem;
 }
 .secondStain {
   position: absolute;
   left: -1.25rem;
   top: 0rem;
-  max-width: 100px;
+  max-width: 6.25rem;
 }
 @media (min-width: 1024px) {
   .header {
@@ -38,5 +38,8 @@
     left: -1.25rem;
     top: -5rem;
     max-width: 12.5rem;
+  }
+  .logo img {
+    max-width: 15.625rem;
   }
 }

@@ -17,7 +17,11 @@ const Footer = () => {
           >
             <img src="/instagram.png" />
           </a>
-          <a target="_blank" rel="noreferrer" href="">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://api.whatsapp.com/send?phone=5519997223594"
+          >
             <img src="/whats.png" />
           </a>
         </div>
